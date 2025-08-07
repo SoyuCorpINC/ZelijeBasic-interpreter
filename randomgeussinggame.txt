@@ -1,0 +1,32 @@
+N]LET P = 0
+N]PRINT"      Welcome to the random geussing game!"
+N]PRINT"Here I will generate a random number from 0-10! and you have"
+N]LET G = 3
+N]PRINT G|
+N]PRINT"Tries to geuss the number I generated, Do Your Best!"
+N]LET R = RND(0;10)
+N]PRINT"Your points:"
+N]PRINT P|
+N]INPUT"Geuss my number!:", A$
+N]IF A| ! |R
+N]~~IF A| > |R
+N]~~~~PRINT"Too big"
+N]~~ENDIF
+N]~~IF A| < |R
+N]~~~~PRINT"Too small"
+N]~~ENDIF
+N]~~PRINT"Try Again..."
+N]~~LET G = G| - 1
+N]~~IF G| ! 0
+N]~~~~PRINT"ONE More"
+N]~~~~GOTO 10
+N]~~ENDIF
+N]ENDIF
+N]IF A| = |R
+N]~~PRINT"You did it :D"
+N]~~LET P = P| + 1
+N]~~GOTO 2
+N]ENDIF
+N]PRINT"My Number was:"
+N]PRINT R|
+N]GOTO 2
