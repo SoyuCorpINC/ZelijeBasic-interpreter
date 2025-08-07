@@ -1,0 +1,20 @@
+N]INPUT"Enter a number: ", N|
+N]LET X = N| / 2
+3]LET T = N| / |X
+N]LET S = T| + |X
+N]LET Y = S| / 2
+N]LET D = X| - |Y
+N]IF D| < 0
+N]~~LET D = D| * -1
+N]ENDIF
+N]IF D| > 0.000000001
+N]~~LET X = Y| + 0
+N]~~GOTO 3
+N]ENDIF
+N]IF D| = 0.000000001
+N]~~LET X = Y| + 0
+N]~~GOTO 3
+N]ENDIF
+N]PRINT"The square root is: "
+N]PRINT Y|
+N]INPUT"Press Enter to exit."
