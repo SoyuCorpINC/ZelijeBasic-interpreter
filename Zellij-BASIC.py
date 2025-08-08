@@ -313,7 +313,7 @@ def setupvariable(line, gt):
                 val = float(line[gt + 4:])
                 varlist[ord(var)-ord('A')] = val
         except:
-            print(line[gt + 4:])
+            #print(line[gt + 4:])
             var = str(line[gt])
             val = float(line[gt + 4:])
             varlist[ord(var)-ord('A')] = val
@@ -387,3 +387,4 @@ def readfileforstatements(gotoval):
     print("Program finished.")
 readfileforstatements(gotoval)
     
+
